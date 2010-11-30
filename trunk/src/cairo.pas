@@ -1423,9 +1423,9 @@ end;
 {$ifdef CAIRO_HAS_SVG_SURFACE}
 destructor TSVGSurface.Destroy;
 begin
+  inherited;
   if FStream <> nil then
     FStream.Free;
-  inherited;
 end;
 {$endif}
 
@@ -1460,9 +1460,9 @@ end;
 {$ifdef CAIRO_HAS_PDF_SURFACE}
 destructor TPDFSurface.Destroy;
 begin
+  inherited;
   if FStream <> nil then
     FStream.Free;
-  inherited;
 end;
 {$endif}
 
@@ -1504,9 +1504,9 @@ end;
 {$ifdef CAIRO_HAS_PS_SURFACE}
 destructor TPostScriptSurface.Destroy;
 begin
+  inherited;
   if FStream <> nil then
     FStream.Free;
-  inherited;
 end;
 {$endif}
 
