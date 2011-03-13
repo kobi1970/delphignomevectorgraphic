@@ -4,6 +4,10 @@ interface
 uses rsvglib, Classes, SysUtils;
 
 type
+{$IFNDEF UNICODE}
+  RawByteString = AnsiString;
+{$ENDIF}
+
   IRSVGObject = interface
     ['{D51E4573-BF97-4F4F-BEFA-19D259696AB0}']
     function GetHandle: PRsvgHandle;

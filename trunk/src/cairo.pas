@@ -675,9 +675,6 @@ type
     function RenderSVG(svg: IRSVGObject; id: RawByteString = ''): Boolean;
 {$ENDIF}
 
-
-
-
     property Op: TCairoOperator read GetOperator write SetOperator;
     property Source: ICairoPattern read GetSource write SetSource;
     property Tolerance: Double read GetTolerance write SetTolerance;

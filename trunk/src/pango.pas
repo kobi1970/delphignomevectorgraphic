@@ -4,6 +4,10 @@ interface
 uses pangolib, glib, Classes;
 
 type
+{$IFNDEF UNICODE}
+  RawByteString = AnsiString;
+{$ENDIF}
+
   // gobject
   IPangoFontMap = interface;
   IPangoFont = interface;
